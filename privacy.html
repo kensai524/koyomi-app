@@ -14,9 +14,9 @@ h1{font-size:24px}h2{font-size:18px;margin-top:28px}a{color:#8b5a2b}
 <p>最終更新: 2026年10月27日</p>
 
 <h2>Google カレンダーのデータ</h2>
-<p>Koyomi は、利用者が Google アカウントでサインインした場合に限り、Google Calendar API を使ってカレンダーの一覧と予定を<strong>読み取り</strong>ます。要求する権限は、カレンダーの閲覧（calendar.readonly）と、接続中のアカウントを表示するためのメールアドレス（openid, email）のみです。</p>
+<p>Koyomi は、利用者が Google アカウントでサインインした場合に限り、Google Calendar API を使ってカレンダーの一覧と予定を読み取り、利用者が Koyomi で操作したときに限り予定を作成・編集・削除します。要求する権限は、カレンダーの閲覧（calendar.readonly）、予定の作成・編集・削除（calendar.events）、接続中のアカウントを表示するためのメールアドレス（openid, email）のみです。</p>
 <ul>
-<li>読み取った予定は、利用者の iPhone 上でカレンダーとして表示するためだけに使います。</li>
+<li>読み取った予定は、利用者の iPhone 上でカレンダーとして表示するためだけに使います。予定の作成・編集・削除は、利用者が Koyomi の画面で保存または削除を選んだときにだけ行います。</li>
 <li>予定のコピーとサインイン情報は利用者の iPhone 内（アプリの保存領域とキーチェーン）にのみ保存され、開発者のサーバーや第三者には送信しません。開発者はサーバーを運用していません。</li>
 <li>広告、分析、AI の学習には使用しません。第三者への販売・共有も行いません。</li>
 </ul>
@@ -32,7 +32,7 @@ h1{font-size:24px}h2{font-size:18px;margin-top:28px}a{color:#8b5a2b}
 <p>アプリの「設定 → Google カレンダーの同期 → Google との直接接続を解除」で、端末内の Google のデータとサインイン情報を削除できます。また、<a href="https://myaccount.google.com/connections">Google アカウントの「リンクされたアプリ」</a>からいつでもアクセス権を取り消せます。</p>
 
 <h2>English summary</h2>
-<p>If you sign in with Google, Koyomi reads your Google Calendar list and events (read-only) solely to display them on your iPhone. Data and credentials are stored only on your device; nothing is sent to the developer or third parties, and nothing is used for advertising, analytics or AI training. Koyomi's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. You can disconnect in the app's settings or revoke access at myaccount.google.com/connections.</p>
+<p>If you sign in with Google, Koyomi reads your Google Calendar list and events to display them on your iPhone, and creates, edits or deletes events only when you do so in the app. Data and credentials are stored only on your device; nothing is sent to the developer or third parties, and nothing is used for advertising, analytics or AI training. Koyomi's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. You can disconnect in the app's settings or revoke access at myaccount.google.com/connections.</p>
 
 <h2>お問い合わせ / Contact</h2>
 <p>kensai524@gmail.com</p>
